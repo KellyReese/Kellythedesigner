@@ -1,5 +1,5 @@
 html{
-    background-color:#371558;
+    background-color:rgb(55, 21, 88);
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -107,9 +107,9 @@ h2{
 }
 .span2{ 
     display: block;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
-    margin-top: 25px;
+    margin-top: 20px;
     
 }
 
@@ -123,7 +123,7 @@ h2{
 .featured{
     padding: 50px;
     align-items: center;
-    border-bottom: white solid 3px;
+    
     
 }
 .img1{
@@ -134,6 +134,10 @@ h2{
     box-shadow: 10px 10px 5px;
     
 }
+.img1:hover{
+    transform: scale(1.15);
+    transition: .5s ease-in-out;
+}
 
 .img2{
     width: 70%;
@@ -143,14 +147,92 @@ h2{
     margin-top: 100px;
     box-shadow: 10px 10px 5px;
 }
+.img2:hover{
+    transform: scale(1.15);
+    transition: .5s ease-in-out;
+}
 .img3{
-    width: 60%;
+    width: 80%;
     height: 100%;
     display: block;
     margin: auto;
     box-shadow: 10px 10px 5px;
 }
+.img3:hover{
+    transform: scale(1.15);
+    transition: .5s ease-in-out;
+}
+.img5{
+    width: 80%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    box-shadow: 10px 10px 5px;
+}
+.img5:hover{
+    transform: scale(1.15);
+    transition: .5s ease-in-out;
+}
 
+.img6{
+    width: 100%;
+    height: 60%;
+    display: block;
+    margin: auto;
+    box-shadow: 10px 10px 5px;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+.img6:hover{
+    transform: scale(1.15);
+    transition: .5s ease-in-out;
+}
+.img7{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    box-shadow: 10px 10px 5px;
+    align-items: center;
+    margin-top: 100px;
+    
+
+
+}
+
+.img7:hover{
+    transform: scale(1.15);
+    transition: .5s ease-in-out;
+}
+.img8{
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: auto;
+    box-shadow: 10px 10px 5px;
+    
+
+    
+}
+.img8:hover{
+    transform: scale(1.15);
+    transition: .5s ease-in-out;
+}
+.img9{
+    width: 100%;
+    height: 30%;
+    display: block;
+    margin: auto;
+    box-shadow: 10px 10px 5px;
+    margin-top: 100px;
+
+}
+.img9:hover{
+    transform: scale(1.15);
+    transition: .5s ease-in-out;
+}
 
 
 
@@ -159,6 +241,7 @@ footer{
     color: white;
     text-align: center;
     font-family: "poppins";
+    border-top: solid white 3px;
     
     
 
@@ -179,6 +262,10 @@ footer{
     .img3{
         margin-top: 100px;
     }
+    .img5{
+        margin-top: 100px;
+    }
+    
     section{
         
         width: 100%;
@@ -191,6 +278,30 @@ footer{
     header{
         width: 100%;
     }
+    .img10{
+    display: block;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    border-radius: 50px;
+}
+.img11{
+    display: block;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    border-radius: 50px;
+
+}
+.img12{
+    display: block;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    border-radius: 50px;
+
+  
+}
    
    
     
@@ -199,6 +310,7 @@ footer{
 .aboutmain{
     
     height: 100%;
+   
 
     
     
@@ -218,28 +330,45 @@ footer{
     border-top: white solid 3px;
     
 }
+.aboutmain h2:hover{
+    color:#371558;
+    transition: .05s;
+    
+
+}
 
 .aboutmain p{
     
-    color: white;
+    color:black;
     font-family: "poppins";
-    font-size: 18px;
+    font-size: 20px;
    
     text-align: justify;
-    
-    padding: 25px;
+    margin-top: 50px;
+    padding: 50px;
     padding-top: 50px;
-    line-height: 32px;
-    margin-right: 40px;
-    margin-left: 40px;
+    line-height: 42px;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color: gold;
+    border: solid white 3px;
+    border-radius:20px;
 
     
     
     
 }
+
+
 span{
     font-weight: bolder;
-    font-size: larger;
+    font-size: 35px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    color:#371558;
+   
+   
+
 }
 
 .img4{
@@ -247,16 +376,58 @@ span{
     width: 100%;
   max-width: 400px;
   height: auto;
-    margin: 30px;
-    margin-top: 80px;
-    margin-left: 50px;
-   
-    float: left;
+    margin:auto;
+    margin-top: 60px;
+  
+    float: top;
     border: solid gold 5px;
     box-shadow: 10px 10px 5px;
+    text-align: center;
     
     
 }
+.img10{
+    display: block;
+    width: 6%;
+    height: 6%;
+    text-align: center;
+    border-radius: 50px;   
+}
+.img11{
+    display: block;
+    width: 6%;
+    height: 6%;
+    text-align: center;
+    border-radius: 50px;
+
+}
+.img12{
+    display: block;
+    width: 6%;
+    height: 6%;
+    text-align: center;
+    border-radius: 50px;
+    
+
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.img12:hover{
+    background-color:white;
+    transition: 0.3s;
+}
+.img11:hover{
+    background-color:white;
+    transition: 0.3s;
+}
+.img10:hover{
+    background-color:white;
+    transition: 0.3s;
+}
+
 
 
 .contactmain h2{
@@ -295,9 +466,10 @@ span{
     font-weight: 800;
     line-height: 2;
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 45px;
     width: 500px;
     text-align: center;
+    color: #371558;
 
 }
 
@@ -359,11 +531,62 @@ span{
 
 }
 
+
 .container form #button:hover{
     background-color: #371558;
     color:white;
     transition: .5s ease-in-out;
 }
+
+.button2:hover{
+    background-color:gold;
+    color:#371558;
+    transition: .3s ease-in-out;
+}
+.button2{
+    border: none;
+    background: white;
+    border-radius: 5px;
+    margin-top: 100px;
+    font-weight: 600;
+    font-family: "poppins";
+    font-size: 26px;
+    width: 200px;
+    height: 40px;
+   
+    transition: 0.3s;
+    display: block;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+
+    
+    
+    
+   
+}
+#button2{
+    text-decoration: none;
+}
+
+.button_a, a:link, a:visited{
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+   
+    
+
+}
+
+.button_a:active{
+    color:white;
+}
+
+.contactmain h2:hover{
+    color:#371558;
+    transition: .05s;
+}
+
 @media only screen and (max-width: 430px){
     body{
         height: 100vh;
@@ -374,6 +597,7 @@ span{
         margin: 0;
         display: grid;
         grid-template-rows: auto 1fr auto;
+        
         
     
         
@@ -390,7 +614,7 @@ span{
        
         text-align: justify;
         margin: auto;
-        padding: auto;
+        
         padding-bottom: 57px;
         
 
@@ -528,7 +752,36 @@ span{
     padding-bottom: 57px;
 }
 
+.logos{
+    padding-bottom: 67px;
+   
+    
+
+}
+.img10{
+    display: block;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    border-radius: 50px;
+}
+.img11{
+    display: block;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    border-radius: 50px;
+
+}
+.img12{
+    display: block;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    border-radius: 50px;
+
   
+}
 }
 @media only screen and (max-width: 870px){
     footer{
@@ -569,6 +822,33 @@ span{
         padding-right: 65px;
        
     }
+    .img10{
+        display: block;
+        width: 15%;
+        height: 15%;
+        text-align: center;
+        border-radius: 50px;
+    }
+    .img11{
+        display: block;
+        width: 15%;
+        height: 15%;
+        text-align: center;
+        border-radius: 50px;
+    
+    }
+    .img12{
+        display: block;
+        width: 15%;
+        height: 15%;
+        text-align: center;
+        border-radius: 50px;
+    
+      
+    }
+    .logos{
+        padding-bottom: 67px;
+    }
 }
 @media only screen and (max-width: 770px){
     .navlink a{
@@ -599,4 +879,50 @@ h1{
     font-size: 15px;
      
 }
+
+.aboutmain p{
+    display: block;
+    width: auto;
+    height: auto;
+    
+}
+.img10{
+    display: block;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    border-radius: 50px;
+}
+.img11{
+    display: block;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    border-radius: 50px;
+
+}
+.img12{
+    display: block;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    border-radius: 50px;
+
+  
+}
+.logos{
+    padding-bottom: 67px;
+}
+.img4{
+    width: 90%;
+    padding-left: 10px;
+    text-align: center;
+}
+span{
+    font-size: 20px;
+    text-align: center;
+   padding-left: 15px;
+}
+
+
 }
