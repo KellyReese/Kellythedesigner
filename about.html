@@ -4,6 +4,8 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about me</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,17 +17,32 @@
 </head>
 <body>
     <header>
-        <h1>Kellythedesigner. </h1>   
-    <nav class="navigation">
-        <ul class="navlist">
-            <li class="navlink"> <a href="index.html">HOME</a></li>
-            <li class="navlink"> <a href="about.html"> ABOUT</a></li>
-            <li class="navlink"> <a href="contact.html"> CONTACT</a></li>
-            <li class="navlink"> <a href="PROJECTS"> PROJECTS</a></li>
-            <li class="navlink"> <a href="SERVICES"> SERVICES</a></li>
-            <li class="navlink"> <a href="SHOP"> SHOP</a></li>
-        </ul>
-    </nav>
+        <h1>Kellythedesigner. </h1>
+        <nav class="navigation">
+            <ul class="sidebar">
+                <li onclick=hideSidebar() class="navlink"><a href="#"> <img class="close" src="images/close_24dp_FFDD00_FILL0_wght400_GRAD0_opsz24.png" alt=" x image to close the menu"></a></li>
+                <li class="navlink"> <a href="index.html">HOME</a></li>
+                <li class="navlink"> <a href="about.html"> ABOUT</a></li>
+                <li class="navlink"> <a href="contact.html"> CONTACT</a></li>
+                <li class="navlink"> <a href="projects.html"> PROJECTS</a></li>
+                <li class="navlink"> <a href="services.html"> SERVICES</a></li>
+                <li class="navlink"> <a href="SHOP"> SHOP</a></li>
+            </ul>  
+            <ul class="navlist">
+                <li class="navlink hideOnMobile"> <a href="index.html">HOME</a></li>
+                <li class="navlink hideOnMobile"> <a href="about.html"> ABOUT</a></li>
+                <li class="navlink hideOnMobile"> <a href="contact.html"> CONTACT</a></li>
+                <li class="navlink hideOnMobile"> <a href="projects.html"> PROJECTS</a></li>
+                <li class="navlink hideOnMobile"> <a href="services.html"> SERVICES</a></li>
+                <li class="navlink hideOnMobile"> <a href="SHOP"> SHOP</a></li>
+                <li onclick=showSidebar() class="menu-button navlink"><a href="#"> <img class="menu" src="images/menu_24dp_FFDD00_FILL0_wght400_GRAD0_opsz24.png" alt=" three line in column to represent the menu"></a></li>
+            </ul>  
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
 </header>
 
 <main class="aboutmain">

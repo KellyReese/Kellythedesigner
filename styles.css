@@ -29,11 +29,14 @@ header{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    height: auto;
     
 }
 
 .navigation{
     text-align: right;
+    display: flex;
+    
     
     
 
@@ -41,11 +44,12 @@ header{
 .navlist{  
     list-style: none;
     padding-right: 35px;
-   
+    
 }
 .navlink{
     display: inline-block;
     padding-right: 20px;
+    
     
     
 }
@@ -54,12 +58,64 @@ header{
     color:white;
     font-family: "poppins";
     font-size: 25px;
+    transition: 0.7s ease;
      
 }
 
 
 .navlink a:hover{
     color:gold;
+    
+}
+
+.sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:#37155873;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: 0.7s ease;
+
+}
+
+.sidebar .navlink {
+    margin: 15px;
+    padding: auto;
+    text-align: left;
+    width: 100%;
+}
+.sidebar .navlink a {
+    width: 100%;
+    font-size: 35px;
+    margin: 25px;
+  
+    
+
+   
+}
+
+.sidebar a:hover{
+    transform: scale(2);
+    padding: 8px;
+    margin: 0;
+    
+}
+
+.menu{
+   
+    display: inline-block;
+    padding: auto;
+    margin: auto;
+    
 }
 
 h1{
@@ -110,6 +166,8 @@ h2{
     font-size: 20px;
     font-weight: 300;
     margin-top: 20px;
+    color:black;
+    padding-top:10px;
     
 }
 
@@ -123,6 +181,8 @@ h2{
 .featured{
     padding: 50px;
     align-items: center;
+    display: none;
+    
     
     
 }
@@ -302,13 +362,57 @@ footer{
 
   
 }
-   
-   
+.projects_h2{
+    font-family: "permanent marker";
+    background-color: gold;
+    margin: 0;
+    padding: 30px;
+    font-size: 60px;
+    text-align: center;
+    border-bottom: solid white 3px;
+    border-top: solid white 3px;
+    display: block;
+    height: 50%;
+  
     
+}
+}
+   
+ .menu-button{
+    display: none;
+
+ }  
+@media only screen and (max-width:1024px){
+    .hideOnMobile {
+        display: none;
+    }
+    .menu{
+        height: 50px;
+        width: 50px;
+
+    }
+    .menu:hover{
+        background-color: #371558;
+        padding: 5px;
+        border-radius: 50px;
+        transition: 0.3s;
+    }
+    .close{
+        height: 50px;
+        width: 50px;  
+    }
+
+    .menu-button{
+        display: block;
+
+    }
+    h1{
+        font-size: 50px;
+    }
 }
 
 .aboutmain{
-    
+    display: block;
     height: 100%;
    
 
@@ -345,6 +449,7 @@ footer{
    
     text-align: justify;
     margin-top: 50px;
+    margin-bottom: 50px;
     padding: 50px;
     padding-top: 50px;
     line-height: 42px;
@@ -353,6 +458,7 @@ footer{
     background-color: gold;
     border: solid white 3px;
     border-radius:20px;
+    display: none;
 
     
     
@@ -362,10 +468,13 @@ footer{
 
 span{
     font-weight: bolder;
-    font-size: 35px;
-    margin-bottom: 20px;
+    font-size: 45px;
+    margin-bottom: 5px;
     padding-top: 50px;
     color:#371558;
+    display: none;
+    
+   
    
    
 
@@ -403,8 +512,8 @@ span{
 }
 .img12{
     display: block;
-    width: 6%;
-    height: 6%;
+    width: 2%;
+    height: 2%;
     text-align: center;
     border-radius: 50px;
     
@@ -547,32 +656,32 @@ span{
     border: none;
     background: white;
     border-radius: 5px;
-    margin-top: 100px;
+    margin-top: 200px;
     font-weight: 600;
     font-family: "poppins";
     font-size: 26px;
     width: 200px;
     height: 40px;
-   
+  
     transition: 0.3s;
     display: block;
     margin: auto;
     align-items: center;
     text-align: center;
+   
 
     
     
     
    
 }
-#button2{
-    text-decoration: none;
-}
+
 
 .button_a, a:link, a:visited{
     text-decoration: none;
     text-align: center;
     justify-content: center;
+    
    
     
 
@@ -585,6 +694,80 @@ span{
 .contactmain h2:hover{
     color:#371558;
     transition: .05s;
+}
+
+
+.project_main h2{
+    text-align: center;
+    font-family: "permanent marker";
+    color: black;
+    font-size: 60px;
+    background-color: gold;
+    margin: 0;
+    padding: 30px;
+    border-bottom: white solid 3px;
+    border-top: white solid 3px;
+
+    
+    
+   
+    
+}
+
+
+.project_main{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+
+    
+}
+
+.project_main h3{
+    margin: 35px;
+    padding: 10px;
+    font-family: "poppins";
+    font-size: 40px;
+    color: black;
+    background-color: gold;
+    display: block;
+    border-radius: 20px;
+    
+}
+
+.video1{
+    position: relative;
+  
+  padding-bottom: 56.25%; 
+    margin-bottom: 20px;
+    overflow: hidden;
+   
+
+}
+
+.video1 iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0px;
+}
+
+.wrapper{
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+    border: none;
+}
+
+.project_main p{
+    color: white;
+    font-family: "poppins";
+    font-size: 18px;
 }
 
 @media only screen and (max-width: 430px){
@@ -602,6 +785,8 @@ span{
     
         
     }
+
+ 
     .aboutmain{
         height: 100vh;
         height: 100dvb;
@@ -648,30 +833,18 @@ span{
        
     }
     h1{
-        font-size: 32px;
+        font-size: 20px;
         margin: 0;
         
 
     }
-  
-    .navigation{
-        text-align: center;
-        display: inline;
-       
-        
-        
-    
-    }
     .navlist{  
         list-style: none;
+        padding-right: 0px;
         
-       
     }
-    .navlink{
-       
-        padding-right: 20px;
-        
-        
+    
+   
     }
     .navlink a{
        
@@ -687,7 +860,7 @@ span{
     .aboutmain h2{
         width: 100dvw;
         text-align: center;
-        font-size: 20px;
+        
         margin: 0;
         padding: 0;
         
@@ -695,7 +868,7 @@ span{
     }
 
     .container form{
-        width: 370px;
+        
         height: 800px;
         display: flex;
         justify-content: center;
@@ -712,7 +885,7 @@ span{
         outline: none;
         min-height: 80px;
         max-width: 80px;
-        min-width: 320px;
+        
         max-width:320px;
         font-family: "poppins";
     
@@ -742,7 +915,7 @@ span{
     }
     .container form #lastname,
 .container form #mobile {
-    margin-left: 0px;
+    margin-left: 10px;
 }
 
 .contactmain h2{
@@ -754,35 +927,41 @@ span{
 
 .logos{
     padding-bottom: 67px;
+    
    
     
 
 }
 .img10{
     display: block;
-    width: 20%;
-    height: 20%;
+    width: 5%;
+    height: 5%;
     text-align: center;
     border-radius: 50px;
 }
 .img11{
     display: block;
-    width: 20%;
-    height: 20%;
+    width: 5%;
+    height: 5%;
     text-align: center;
     border-radius: 50px;
 
 }
 .img12{
     display: block;
-    width: 20%;
-    height: 20%;
+    width: 5%;
+    height: 5%;
     text-align: center;
     border-radius: 50px;
 
   
 }
+
+.sidebar{
+    width: 100%;
 }
+
+
 @media only screen and (max-width: 870px){
     footer{
         position: fixed;
@@ -798,28 +977,26 @@ span{
     .aboutmain h2{
         width: 100dvw;
         text-align: center;
-        font-size: 35px;
+        font-size: 60px;
         margin: 0;
         padding: 0;
         
 
     }
     header{
-        display: inline;
+        display: inline flex;
         padding: 0;
         margin:0;
-        align-items: center;
+        text-align: center;
         width: 100%;
         text-align: center;
         
         
      }
-     h1{
-        padding-left: 100px;
-     }
+    
      .navlist{  
         list-style: none;
-        padding-right: 65px;
+        
        
     }
     .img10{
@@ -849,6 +1026,11 @@ span{
     .logos{
         padding-bottom: 67px;
     }
+
+   .aboutmain span{
+    font-size: 45px;
+    text-align: center;
+   }
 }
 @media only screen and (max-width: 770px){
     .navlink a{
@@ -860,32 +1042,95 @@ span{
     }
     .navlist{  
         list-style: none;
-        padding-right: 100px;
+     
        
 }
+.container form{
+    width: 500px; 
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background: gold;
+    flex-wrap: wrap;
+}
+.container form #lastname,
+.container form #mobile {
+    margin-left: 0px;
+}
+.container form textarea{
+    border-color:#371558;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-height: 80px;
+    max-width: 80px;
+    min-width: 420px;
+    max-width:420px;
+    font-family: "poppins";
+
+}
+
 }
 @media only screen and (max-width: 390px){
-header{
-    width: 100dvw;
 
-}
 h1{
-    padding-left: 50px;
+    font-size: 20px;
 }
-.navlink a{
-    text-decoration: none;
-    color:white;
-    font-family: "poppins";
-    font-size: 15px;
-     
+.aboutmain h2{
+    font-size: 20px;
+    width: 100%;
 }
 
+.navlist{  
+    list-style: none;
+    padding-right: 0px;
+    
+}
 .aboutmain p{
     display: block;
     width: auto;
     height: auto;
+    margin-bottom: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
     
 }
+
+.aboutmain span{
+    
+    font-size:30px;
+    text-align: left;
+
+}
+   
+
+.container form{
+    width: 350px; 
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background: gold;
+    flex-wrap: wrap;
+}
+
+.container form textarea{
+    border-color:#371558;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-height: 80px;
+    max-width: 80px;
+    min-width: 220px;
+    max-width:220px;
+    font-family: "poppins";
+
+}
+
 .img10{
     display: block;
     width: 20%;
@@ -915,8 +1160,9 @@ h1{
 }
 .img4{
     width: 90%;
-    padding-left: 10px;
+    margin-left: 15px;
     text-align: center;
+    
 }
 span{
     font-size: 20px;
@@ -924,5 +1170,17 @@ span{
    padding-left: 15px;
 }
 
+.contactmain h2{
+    margin-bottom: 50px;
+}
+
+.menu{
+    height: 30px;
+    width: 30px;
+}
+
+.sidebar .navlink a{
+    font-size: 20px;
+}
 
 }
