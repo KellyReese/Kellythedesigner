@@ -18,3 +18,4 @@ $(document).ready(function(){
         sidebar.style.display = "none"
     }
 
+

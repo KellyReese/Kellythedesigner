@@ -53,12 +53,14 @@ header{
     
     
 }
-.navlink a{
+.navigation .navlink a{
     text-decoration: none;
     color:white;
     font-family: "poppins";
-    font-size: 25px;
+    font-size: 23px;
     transition: 0.7s ease;
+    
+
      
 }
 
@@ -66,6 +68,11 @@ header{
 .navlink a:hover{
     color:gold;
     
+    
+}
+.navigation .navlist .navlink:hover{
+    scale: 1.2;
+    transition: 0.5s ease;
 }
 
 .sidebar{
@@ -95,7 +102,7 @@ header{
 }
 .sidebar .navlink a {
     width: 100%;
-    font-size: 35px;
+    font-size: 20px;
     margin: 25px;
   
     
@@ -103,8 +110,8 @@ header{
    
 }
 
-.sidebar a:hover{
-    transform: scale(2);
+.sidebar  a:hover{
+    transform: scale(1.2);
     padding: 8px;
     margin: 0;
     
@@ -414,13 +421,9 @@ footer{
 .aboutmain{
     display: block;
     height: 100%;
-   
+    width: 100%;
+    justify-content: center;
 
-    
-    
-    
-   
-    
 }
 .aboutmain h2{
     text-align: center;
@@ -432,6 +435,7 @@ footer{
     padding: 30px;
     border-bottom: white solid 3px;
     border-top: white solid 3px;
+   
     
 }
 .aboutmain h2:hover{
@@ -459,6 +463,7 @@ footer{
     border: solid white 3px;
     border-radius:20px;
     display: none;
+    
 
     
     
@@ -488,7 +493,7 @@ span{
     margin:auto;
     margin-top: 60px;
   
-    float: top;
+   
     border: solid gold 5px;
     box-shadow: 10px 10px 5px;
     text-align: center;
@@ -527,14 +532,28 @@ span{
 .img12:hover{
     background-color:white;
     transition: 0.3s;
+    scale: 1.2;
+
 }
 .img11:hover{
     background-color:white;
     transition: 0.3s;
+    scale: 1.2;
+
 }
 .img10:hover{
     background-color:white;
     transition: 0.3s;
+    scale: 1.2;
+
+}
+
+.img13{
+    display:block ;
+    height: 80%;
+    width: 80%;
+    align-items: center;
+    padding-left: 100px;
 }
 
 
@@ -668,12 +687,44 @@ span{
     margin: auto;
     align-items: center;
     text-align: center;
+    position: relative;
+    
    
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.button2::after,.button2::before{
+    
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 70%, gold);
+    top:50%;
+    left:50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding:3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
 
-    
-    
-    
-   
+}
+
+@keyframes spin{
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+.button2::before{
+    filter: blur(2px);
+    opacity:0.9;
 }
 
 
@@ -696,7 +747,12 @@ span{
     transition: .05s;
 }
 
-
+.project_main{
+    display: block;
+}
+.project_main h3 {
+    display: block;
+}
 .project_main h2{
     text-align: center;
     font-family: "permanent marker";
@@ -708,6 +764,7 @@ span{
     border-bottom: white solid 3px;
     border-top: white solid 3px;
 
+    display: block;
     
     
    
@@ -738,6 +795,7 @@ span{
     
 }
 
+
 .video1{
     position: relative;
   
@@ -756,6 +814,7 @@ span{
     height: 100%;
     border-width: 0px;
 }
+
 
 .wrapper{
     width: 80%;
@@ -857,15 +916,6 @@ span{
         color:gold;
     }
   
-    .aboutmain h2{
-        width: 100dvw;
-        text-align: center;
-        
-        margin: 0;
-        padding: 30px;
-        
-
-    }
 
     .container form{
         
@@ -925,9 +975,7 @@ span{
 
 .logos{
     padding-bottom: 67px;
-    
-   
-    
+
 
 }
 .img10{
