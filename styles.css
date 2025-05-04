@@ -189,10 +189,26 @@ h2{
     padding: 50px;
     align-items: center;
     display: none;
+    font-family: "poppins";
     
     
     
 }
+.project_main .featured{
+    padding:0;
+}
+
+
+
+.img17, .img18, .img19{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+   
+}
+
+
+
 .img1{
     width: 70%;
     height: 100%;
@@ -313,6 +329,24 @@ footer{
     
 
 
+}
+
+
+.contactmain h2{
+    text-align: center;
+    font-family: "permanent marker";
+    background-color: gold;
+    margin: 0;
+    padding: 30px;
+    font-size: 60px;
+    border-bottom: solid white 3px;
+    border-top: white solid 3px;
+    
+
+}
+
+.featured2{
+    margin-top: 100px;
 }
 
 
@@ -550,26 +584,16 @@ span{
 
 .img13{
     display:block ;
-    height: 80%;
-    width: 80%;
-    align-items: center;
-    padding-left: 100px;
-}
-
-
-
-.contactmain h2{
-    text-align: center;
-    font-family: "permanent marker";
-    background-color: gold;
-    margin: 0;
-    padding: 30px;
-    font-size: 60px;
-    border-bottom: solid white 3px;
-    border-top: white solid 3px;
+    height: 50%;
+    width: 50%;
     
-
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
+
+
 .container{
     min-height: 100vh;
     display: flex;
@@ -792,9 +816,13 @@ span{
     background-color: gold;
     display: block;
     border-radius: 20px;
-    
+    transition: .5s ease;
 }
 
+.emotes{
+    transition: .2s ease;
+    margin: 20px;
+}
 
 .video1{
     position: relative;
@@ -828,6 +856,111 @@ span{
     font-family: "poppins";
     font-size: 18px;
 }
+.project_main h3:hover{
+    color:gold;
+    background-color: black;
+    
+
+}
+
+.servicesmain h2{
+    text-align: center;
+    font-family: "permanent marker";
+    color: black;
+    font-size: 60px;
+    background-color: gold;
+    margin: 0;
+    padding: 30px;
+    border-bottom: white solid 3px;
+    border-top: white solid 3px;
+
+    display: block;
+    
+
+}
+
+.blogmain h2{
+    text-align: center;
+    font-family: "permanent marker";
+    color: black;
+    font-size: 60px;
+    background-color: gold;
+    margin: 0;
+    padding: 30px;
+    border-bottom: white solid 3px;
+    border-top: white solid 3px;
+
+    display: block;
+    
+
+}
+
+.blogmain p{
+    color:black;
+    font-family: "poppins";
+    font-size: 20px;
+   
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+    padding-top: 10px;
+    line-height: 42px;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color: gold;
+    border: solid white 3px;
+    border-radius:20px;
+}
+.blogmain span{
+    font-size: 35px;
+    display: block;
+    margin: 5px;
+   
+}
+
+.blogmain .span3{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.img17, .img18, .img19 {
+   height: 80%;
+   width: 80%;
+}
+
+.servicesmain h3{
+    font-family: "poppins";
+    font-size: 40px;
+    color: white;
+    display: none;
+  
+
+}
+
+.servicesmain p{
+    color: white;
+    text-align: center;
+
+    color:black;
+    font-family: "poppins";
+    font-size: 20px;
+   
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+    padding-top: 50px;
+    line-height: 42px;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color: gold;
+    border: solid white 3px;
+    border-radius:20px;
+    display: none;
+   
+}
+
 
 @media only screen and (max-width: 430px){
     body{
@@ -902,7 +1035,28 @@ span{
         padding-right: 0px;
         
     }
+    .blogmain span{
+        font-size: 20px;
+    }
     
+    .blogmain .span3{
+        font-size: 15px;
+        text-align: center;
+
+    }
+    .blogmain p{
+        margin: 10px;
+        margin-top: 50px;
+        
+    }
+    .servicesmain h3{
+        font-size: 30px;
+    }
+
+    .servicesmain p{
+        width: 300px;
+        margin: auto;
+    }
    
     }
     .navlink a{
@@ -1008,6 +1162,30 @@ span{
 }
 
 
+
+.servicesmain {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "poppins";
+    
+    
+}
+
+.servicesmain h3{
+    font-family: "poppins";
+    
+    color: white;
+    display: none;
+  
+
+}
+
+
+
+
+
 @media only screen and (max-width: 870px){
     footer{
         position: fixed;
@@ -1092,7 +1270,7 @@ span{
        
 }
 .container form{
-    width: 500px; 
+    width: 400px; 
     height: 800px;
     display: flex;
     justify-content: center;
@@ -1112,10 +1290,20 @@ span{
     outline: none;
     min-height: 80px;
     max-width: 80px;
-    min-width: 420px;
+    min-width: 320px;
     max-width:420px;
     font-family: "poppins";
 
+}
+
+.blogmain .span3{
+    text-align: center;
+
+
+}
+.blogmain span{
+    font-size: 25px;
+    text-align: center;
 }
 
 }
@@ -1218,6 +1406,7 @@ span{
 
 .contactmain h2{
     margin-bottom: 50px;
+    font-size: 30px;
 }
 
 .menu{
@@ -1228,5 +1417,31 @@ span{
 .sidebar .navlink a{
     font-size: 20px;
 }
+
+.blogmain .span3{
+    text-align: center;
+    
+}
+.blogmain p{
+    font-size: 14px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.blogmain span{
+    font-size: 17px;
+}
+
+.servicesmain p{
+    width: 270px;
+    font-size: 14px;
+}
+.servicesmain h2{
+    font-size: 30px;
+}
+
+.blogmain h2{
+    font-size: 30px;
+}
+
 
 }

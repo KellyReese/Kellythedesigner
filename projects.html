@@ -24,7 +24,7 @@
                 <li class="navlink"> <a href="contact.html"> CONTACT</a></li>
                 <li class="navlink"> <a href="projects.html"> PROJECTS</a></li>
                 <li class="navlink"> <a href="services.html"> SERVICES</a></li>
-                <li class="navlink"> <a href="shop.html"> SHOP</a></li>
+                <li class="navlink"> <a href="blog.html"> BLOG</a></li>
             </ul>  
             <ul class="navlist">
                 <li class="navlink hideOnMobile"> <a href="index.html">HOME</a></li>
@@ -32,7 +32,7 @@
                 <li class="navlink hideOnMobile"> <a href="contact.html"> CONTACT</a></li>
                 <li class="navlink hideOnMobile"> <a href="projects.html"> PROJECTS</a></li>
                 <li class="navlink hideOnMobile"> <a href="services.html"> SERVICES</a></li>
-                <li class="navlink hideOnMobile"> <a href="shop.html"> SHOP</a></li>
+                <li class="navlink hideOnMobile"> <a href="blog.html"> BLOG</a></li>
                 <li onclick=showSidebar() class="menu-button navlink"><a href="#"> <img class="menu" src="images/menu_24dp_FFDD00_FILL0_wght400_GRAD0_opsz24.png" alt=" three line in column to represent the menu"></a></li>
             </ul>  
             <div class="hamburger">
@@ -43,40 +43,90 @@
         </nav>
     </header>
    
-    <main class=" project_main">
+    <main class=" project_main" >
         <h2 class="project_section"> Projects.</h2>
-        <h3> Emotes.</h3>
-        <main class="featured">  
+
+        <article class="featured2">  
+            <h3 onclick="toggle2()"> Emotes.</h3>
+        <div class="emotes" id="myEM" style="display: none;">
             <div class = "row">
                 <div class="column">
             <img class="img14" src="images/LogoYellowAYD.png" alt=" logo for katnappin created by Kelly " >
+            <p> AYD EMOTE:</p>
+            <p> Emote made for a client that can be used for Twitch, Youtube, and Discord</p>
+            <p> Profile emote  made with the initials of the streamer and thier desired color scheme. </p>
+            <p> TOOLS USED:</p>
+            <p> Huion Drawing Pad with Photoshop</p>
+            <p> YEAR:</p>
+            <p> 2020</p>
         </div>
         <div class="column">
-            <img class="img15" src="images/HeartRhi 500x500.png" alt=" poster for the font glodak created by Kelly">
+            <img class="img16" src="images/AngryYAK.png" alt=" poster for the font glodak created by Kelly">
+            <p> ANGRY YAK EMOTE:</p>
+            <p> Emote made for a client that can be used for Twitch, Youtube, and Discord</p>
+            <p> Illustrated with goal to make an angry emote for client. I wanted to think outside the box and go for the a more cartoon approach using their mascot- a yak</p>
+            <p> TOOLS USED:</p>
+            <p> Huion Drawing Pad with Photoshop</p>
+            <p> YEAR:</p>
+            <p> 2019</p>
         </div>
         <div class="column">
-            <img class="img16" src="images/AngryYAK.png" alt=" vector design of musical artist Miguel created by Kelly">
+            <img class="img15" src="images/HeartRhi.png" alt=" image of girl hugging a heart">
+            <p> HEART EMOTE:</p>
+            <p> Emote made for a client that can be used for Twitch, Youtube, and Discord</p>
+            <p> Created for a client that wanted a heart emote for her channel with herself featured in it as well </p>
+            <p> TOOLS USED:</p>
+            <p> Huion Drawing Pad with Photoshop</p>
+            <p> YEAR:</p>
+            <p> 2019</p>
         </div>
         </div>
-        </main>
-        
-        <h3> Indesign.</h3>
-        <h3> Typography.</h3>
-        <div class="typo">
-            <img class ="img13" src="images/typo_project.jpg">
+       
+        </div>
+        </article>
+        <h3 onclick="toggle1()" > Typography.</h3>
+        <div class="typo" id="myTYPO" style="display: none;">
+            <img class ="img13" src="images/typo_project.jpg" alt=" Alphabet made with tools">
+            <p> ABC's OF TYPOGRAPHY: </p>
+            <p> Made for a personal project for a class in Typography</p>
+            <p> TOOLS USED:</p>
+            <p> Tools from a tool box I have on hand and Photoshop</p>
+            <p> YEAR:</p>
+            <p> 2024</p>
         </div>
         
             
-        <h3> Mo Graph & Editing</h3>
-        <div class="wrapper">
+        <h3 onclick="toggle()" >Mo Graph & Editing.</h3>
+        <div class="wrapper" id="myDIV" style="display: none;">
         <div class = "video1">
         <iframe  src="https://www.youtube.com/embed/kGHezfDQ2kA?si=OtylVjHG7aEv-2G4" allowfullscreen></iframe>
+        </div>
+        <p> STREAM INTRODUCTION:</p>
+            <p> Made for a personal project for a class in Motion Graphics</p>
+            <p> TOOLS USED:</p>
+            <p> Adobe After Effects and Photoshop</p>
+            <p> YEAR:</p>
+            <p> 2025</p>
+    </div>
+      
+        <h3 onclick="toggle3()"> Indesign</h3>
+        <div class="indesign" id="myART" style="display: none;"> 
+            <img class="img17" src="images/mag1.JPG" alt=" magazine recreation  " >
+
+            <img class="img18" src="images/mag2.JPG" alt=" magazine recreation ">
+            <img class="img19" src="images/mag3.JPG" alt=" scans of old Rolling Stone 2010 Magazine">
+            <p class="title"> MAGAZINE RECREATION :</p>
+            <p>Made for a personal project for a class in InDesign </p>
+            <p> I recreated pages from a 2010 Rolling Stone Magazine</p>
+            <p> TOOLS USED:</p>
+            <p> Indesign, Photoshop, and a printer/scanner</p>
+            <p> YEAR:</p>
+            <p> 2025</p>
        
         </div>
-    </div>
-      <p> content about the video above.</p>
-        <h3> Digital Artworks</h3>
+        
 
     </main>
+
     <footer><p> All rights Reserved. © 2025</p></footer>
     </body>
